@@ -14,20 +14,15 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
         header {
-            background: #333;
+            background: #222;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            border-bottom: #4CAF50 3px solid; /* Updated color */
         }
         header a {
-            color: #fff;
+            color: #4CAF50; /* Updated color */
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
@@ -38,7 +33,7 @@
         }
         header li {
             display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
             float: left;
@@ -52,7 +47,7 @@
         }
         section#showcase {
             min-height: 400px;
-            background: url('https://source.unsplash.com/random/1200x800') no-repeat 0 -400px;
+            background: url('https://source.unsplash.com/random/1200x800') no-repeat center center/cover;
             text-align: center;
             color: #fff;
         }
@@ -78,6 +73,8 @@
             background: #fff;
             padding: 20px;
             margin-bottom: 20px;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
         }
         .profile h2, .skills h2, .education h2, .experience h2, .projects h2 {
             margin-top: 0;
@@ -85,12 +82,45 @@
         .profile p, .skills p, .education p, .experience p, .projects p {
             margin: 10px 0;
         }
+        .profile-img {
+            border-radius: 50%; /* Circular image */
+            width: 150px; /* Adjust size */
+            height: 150px; /* Adjust size */
+            display: block;
+            margin: 0 auto; /* Center align */
+        }
         footer {
             padding: 20px;
             margin-top: 20px;
-            background: #333;
+            background: #222;
             color: #fff;
             text-align: center;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button {
+            background-color: #4CAF50; /* Button color */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker color on hover */
         }
     </style>
 </head>
@@ -120,14 +150,15 @@
     </section>
 
     <div class="container">
-        <section id="profile" class="profile">
+        <section id="profile" class="profile fade-in">
             <div class="section-title">
                 <h2>Profil</h2>
             </div>
+            <img src="path/to/your-image.jpg" alt="Rochdi Youssra" class="profile-img">
             <p>Ingénieur d'État en génie mathématique et informatique passionnée par la résolution de problèmes complexes et l'innovation technologique. Forte d'une solide formation académique et de diverses expériences professionnelles.</p>
         </section>
 
-        <section id="skills" class="skills">
+        <section id="skills" class="skills fade-in">
             <div class="section-title">
                 <h2>Compétences</h2>
             </div>
@@ -141,7 +172,7 @@
             <p><strong>Langues :</strong> Arabe (Langue maternelle), Français (Niveau avancé), Anglais (Niveau courant)</p>
         </section>
 
-        <section id="education" class="education">
+        <section id="education" class="education fade-in">
             <div class="section-title">
                 <h2>Formation</h2>
             </div>
@@ -150,7 +181,7 @@
             <p><strong>Baccalauréat Science Physique et Chimique</strong> - Lycée Mohammed VI, Martil (2017 - 2018)</p>
         </section>
 
-        <section id="experience" class="experience">
+        <section id="experience" class="experience fade-in">
             <div class="section-title">
                 <h2>Expérience Professionnelle</h2>
             </div>
@@ -175,7 +206,7 @@
             <p><em>Technologies :</em> Python(Flask), React Native, Expo</p>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="projects" class="projects fade-in">
             <div class="section-title">
                 <h2>Projets Académiques</h2>
             </div>
