@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rochdi Youssra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: url('https://source.unsplash.com/random/1200x800') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        section#showcase p {
+            font-size: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .section-title h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            color: #333;
+        }
+        .profile, .skills, .education, .experience, .projects {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .profile h2, .skills h2, .education h2, .experience h2, .projects h2 {
+            margin-top: 0;
+        }
+        .profile p, .skills p, .education p, .experience p, .projects p {
+            margin: 10px 0;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Rochdi Youssra</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profil</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Ingénieur Full-Stack passionnée par la résolution de problèmes complexes et l'innovation technologique</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="profile" class="profile">
+            <div class="section-title">
+                <h2>Profil</h2>
+            </div>
+            <p>Ingénieur d'État en génie mathématique et informatique passionnée par la résolution de problèmes complexes et l'innovation technologique. Forte d'une solide formation académique et de diverses expériences professionnelles.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-title">
+                <h2>Compétences</h2>
+            </div>
+            <p><strong>Langages de programmation :</strong> JAVA/JEE, PYTHON, C#, Kotlin</p>
+            <p><strong>Frameworks :</strong> Hibernate, Spring (Boot, MVC, Data, Security), ASP.Net, .Net</p>
+            <p><strong>Développement web :</strong> HTML, CSS, PHP, JavaScript</p>
+            <p><strong>Développement mobile :</strong> Android</p>
+            <p><strong>SGBD :</strong> MySQL, PhpMyAdmin, SQL Server, PostgreSQL</p>
+            <p><strong>Conception et modélisation :</strong> UML</p>
+            <p><strong>Contrôle de version :</strong> Git, GitHub</p>
+            <p><strong>Langues :</strong> Arabe (Langue maternelle), Français (Niveau avancé), Anglais (Niveau courant)</p>
+        </section>
+
+        <section id="education" class="education">
+            <div class="section-title">
+                <h2>Formation</h2>
+            </div>
+            <p><strong>Diplôme d’ingénieur d'État en génie mathématique et informatique</strong> - Faculté de Science et Technique, Mohammedia (2020 - 2024)</p>
+            <p><strong>Classes préparatoires aux grandes écoles</strong> - CPGE Moulay El Hassan, Tanger (2018 - 2020)</p>
+            <p><strong>Baccalauréat Science Physique et Chimique</strong> - Lycée Mohammed VI, Martil (2017 - 2018)</p>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="section-title">
+                <h2>Expérience Professionnelle</h2>
+            </div>
+            <p><strong>Stage PFE (Février – Juin 2024)</strong> - B3G, Rabat</p>
+            <p>Développement d’un système de traitement des transactions financières “BATCH” pour le client Wafacach filiale Tunisie</p>
+            <p><em>Technologies :</em> .NET/C#, TDD, DDD, Principes SOLID</p>
+
+            <p><strong>Projet de développement (Juillet 2024)</strong> - B3G, Rabat</p>
+            <p>Développement d’un service de mise à disposition pour le client Umnia Bank</p>
+            <p><em>Technologies :</em> Kotlin, Android, XML, TDD, DDD, Principes SOLID</p>
+
+            <p><strong>Stage PFA (Avril – Juin 2023)</strong> - Cash Plus Entreprise, Casablanca</p>
+            <p>Développement d'une solution de paiement en espèces et création d'un système de notification</p>
+            <p><em>Technologies :</em> Spring Boot, Spring WebFlux, ReactJS, NodeJS, MySQL</p>
+
+            <p><strong>Stage d’été (Juillet – Septembre 2022)</strong> - Cash Plus Entreprise, Casablanca</p>
+            <p>Développement ERP pour des transferts d'argent en masse ou individuels</p>
+            <p><em>Technologies :</em> Odoo, Python, PostgreSQL</p>
+
+            <p><strong>Stage PFA (Avril – Juin 2022)</strong> - Cash Plus Entreprise, Casablanca</p>
+            <p>Développement d'un Chat Bot pour faciliter les transactions clients</p>
+            <p><em>Technologies :</em> Python(Flask), React Native, Expo</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-title">
+                <h2>Projets Académiques</h2>
+            </div>
+            <p><strong>Site web de location des voitures (Février – Mars 2022)</strong></p>
+            <p><em>Technologies :</em> HTML5, CSS3, PHP, Bootstrap, JavaScript, MySQL, UML</p>
+
+            <p><strong>Application Desktop de gestion des dons (Novembre – Décembre 2021)</strong></p>
+            <p><em>Technologies :</em> Java, Java Swing, MySQL, UML</p>
+
+            <p><strong>Application Desktop de Covoiturage (Mars – Mai 2021)</strong></p>
+            <p><em>Technologies :</em> Java, JavaFX, MySQL, UML</p>
+
+            <p><strong>Site web de freelance (Janvier – Mars 2023)</strong></p>
+            <p><em>Technologies :</em> Spring, HTML5, CSS3, PHP, Bootstrap, JavaScript, MySQL, UML</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rochdi Youssra. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
